@@ -9,7 +9,6 @@ const SearchField = () => {
 
   return (
     <form onSubmit={handleSubmit} className="search-form">
-      {/* Add your input and button here */}
       <input type="text" placeholder="Search..." />
       <button type="submit">Search</button>
     </form>

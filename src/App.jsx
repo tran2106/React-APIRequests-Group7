@@ -10,9 +10,13 @@ const GIPHY_API_KEY = "3OSO9K8tBsI2u8bUlgc6Qg6ZgwyJ2Lrp";
 
 const App = () => {
   return (
-    <div className="app">
-      <h1 className="title">Let's Make Some API Requests!</h1>
-    </div>
+     <div className="app">
+  <SearchField />    {/* //   <h1 className="title">Let's Make Some API Requests!</h1>
+    //   <form className="search-form">
+    //   <input type="text" placeholder="Search..." />
+    //   <button type="submit">Search</button>
+    // </form> */}
+   </div>
   );
 };
 
@@ -20,6 +24,7 @@ const App = () => {
 // it into the index.html
 const root = createRoot(document.getElementById("root"));
 root.render(<App />);
+
 
 
 

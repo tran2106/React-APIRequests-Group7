@@ -36,3 +36,14 @@ body {
 .gif-card img {
   width: 100%;
 }
+.search-form button {
+  width: 50%;
+  height: 50px;
+}
+.search-form form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  width : 600px;
+}
+

@@ -21,7 +21,11 @@ const App = () => { //main app component
      <div className="app">
     <h1 className="title">Find a GIF!</h1>
     <SearchField />    
-    
+    <div className="gif-list">
+      {gifs.map((gif) => (
+        <GifCard key={gif.id} gif={gif} />
+      ))}
+    </div>
    </div>
   );
 };

@@ -52,4 +52,16 @@ body {
   width : 500px;
   height: 80px;
 }
+.gif-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 20px;
+  text-align: center;
+}
+.gif-card {
+border: 1px solid #ccc;
+padding: 10px;
+text-align: center;
 
+}

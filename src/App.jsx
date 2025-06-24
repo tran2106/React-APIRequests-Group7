@@ -17,6 +17,11 @@ const App = () => { //main app component
     .then((response) => response.json())
     .then((data) => setGifs(data.data));
   }, []);
+
+  // //handle search 
+  // const handleSearch = (searchTerm) => {
+    
+  //   //fetch gifs seach ternms ///
   return (
      <div className="app">
     <h1 className="title">Find a GIF!</h1>

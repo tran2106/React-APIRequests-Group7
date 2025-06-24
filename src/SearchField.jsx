@@ -11,6 +11,7 @@ const SearchField = () => {
 
   return (
     <form onSubmit={handleSubmit} className="search-form">
+      <div className="search-bar"></div>
       <input type="text" placeholder="Search..." />
       <button type="submit">Search</button>
     </form>

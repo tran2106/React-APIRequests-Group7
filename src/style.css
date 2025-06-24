@@ -59,6 +59,11 @@ body {
   padding: 20px;
   text-align: center;
 }
+
+.gif-card {
+  width: 300px;
+  height: 300px;
+}
 .gif-card {
 border: 1px solid #ccc;
 padding: 10px;

@@ -8,14 +8,13 @@ import "./style.css";
 // const GIPHY_API_KEY = "YOUR_API_KEY";
 const GIPHY_API_KEY = "3OSO9K8tBsI2u8bUlgc6Qg6ZgwyJ2Lrp";
 
-const App = () => {
+const App = () => { //main app component
+  const [gifs, setGifs] = React.useState([]); // state to hold the GIFs
+  const [query, setQuery] = React.useState(""); // state to hold the search terms
   return (
      <div className="app">
-  <SearchField />    {/* //   <h1 className="title">Let's Make Some API Requests!</h1>
-    //   <form className="search-form">
-    //   <input type="text" placeholder="Search..." />
-    //   <button type="submit">Search</button>
-    // </form> */}
+  <SearchField />    
+  <h1 className="title">Find a GIF!</h1>
    </div>
   );
 };

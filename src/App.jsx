@@ -20,12 +20,17 @@ const App = () => { //main app component
 
   // //handle search 
   // const handleSearch = (searchTerm) => {
-    
+    const handleSearch = (searchTerm) => {
+    setQuery(searchTerm); // update the query state with the search term
+    fetch(`http://api.giphy.com/v1/gifs/search?q=${searchTerm}&api_key=${GIPHY_API_KEY}&limit=10`) //add url and include seachterm inputs
+      .then((response) => response.json())
+      .then((data) => setGifs(data.data));
+  }
   //   //fetch gifs seach ternms ///
   return (
      <div className="app">
     <h1 className="title">Find a GIF!</h1>
-    <SearchField />    
+    <SearchField onSearch={handleSearch} />    
     <div className="gif-list">
       {gifs.map((gif) => (
         <GifCard key={gif.id} gif={gif} />

@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
+
 
 const SearchField = () => {
-  return <div></div>;
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // handle the search logic here
+  };
+
+  return (
+    <form onSubmit={handleSubmit} className="search-form">
+      {/* Add your input and button here */}
+      <input type="text" placeholder="Search..." />
+      <button type="submit">Search</button>
+    </form>
+  );
 };
 
 export default SearchField;

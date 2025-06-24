@@ -36,3 +36,37 @@ body {
 .gif-card img {
   width: 100%;
 }
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+.search-form button {
+  width: 500px;
+  height: 80px;
+}
+.search-form input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  width : 500px;
+  height: 80px;
+}
+.gif-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+.gif-card {
+  width: 300px;
+  height: 300px;
+}
+.gif-card {
+
+padding: 10px;
+text-align: center;
+
+}
